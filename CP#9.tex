@@ -1,4 +1,3 @@
-
 \documentclass[12pt]{article}
 
 \usepackage{amsmath}
@@ -237,18 +236,321 @@
         \end{array}
     \end{equation*}
 
-    \paragraph*{1- d) }{\bf Determinar la funcion de probabilidad de la v.a $\left(X|Y = 2\right)$ y su valor esperado }
+    \paragraph*{2- d) }{\bf Determinar la funcion de probabilidad de la v.a $\left(X|Y = 2\right)$ y su valor esperado }
     
-    Dada la variable aleatoria $ X | Y = 2 $ Podemos encontrar su funcion de probabilidad con la siguiente formula : 
+    \begin{flushleft}
+        Dada la variable aleatoria $ X | Y = 2 $ Podemos encontrar su funcion de probabilidad con la siguiente formula : 
+        \begin{equation*}
+            P \left(X = a_i | Y = b_j\right) = \frac{P\left(X = a_i , Y = b_j\right)}{P \left(Y = b_j\right)}
+            \hspace*{1cm} 
+            \mbox{, con $b_j$  fijo } 
+        \end{equation*}
+        Ahora para obtener la funci\'on de probabilidad de la variable aleatoria $ X|Y =2$
+    \end{flushleft}
+
+    \begin{equation*} 
+        \begin{array}{rcccc}
+            P\left(X = 4 | Y =2 \right) & = & \displaystyle \frac{P\left(X=4 , Y=2\right)}{P\left(Y =2\right)} & = & \displaystyle \frac{1}{2}
+            \\
+            \\
+            P\left(X = 6 | Y =2 \right) & = & \displaystyle \frac{P\left(X=6 , Y=2\right)}{P\left(Y =2\right)} & = & \displaystyle \frac{1}{4}
+            \\
+            \\
+            P\left(X = 8 | Y =2 \right) & = & \displaystyle \frac{P\left(X=8 , Y=2\right)}{P\left(Y =2\right)} & = & 0
+            \\
+            \\
+            P\left(X = 10 | Y =2 \right) & = & \displaystyle \frac{P\left(X=10 , Y=2\right)}{P\left(Y =2\right)} & = & \displaystyle \frac{1}{4}
+        \end{array}
+    \end{equation*}
+
+ 
+    \begin{table}[h]  
+        \begin{center}
+            \renewcommand{\arraystretch}{1.5}
+            \begin{tabular}{|c|c|c|c|c|}
+                \hline
+                X & 4 & 6 & 8 & 10 
+                \\
+                \hline
+                $\displaystyle P \left(X|Y=2\right)$ & $ \frac{1}{2}$ & $ \frac{1}{4}$ & $0$ & $ \frac{1}{4}$
+                \\
+                \hline 
+            \end{tabular}
+        \end{center}
+    \end{table}  
+        
+
+
+
+    \paragraph*{2-c }{\bf  Determinar si X y Y  son independientes} 
+
+    \begin{flushleft}
+        Para determinar si son independientes tenemos que comprobar que se coumple : 
     
     
     \begin{equation*}
-        P \left(X = a_i | Y = b_j\right) = \frac{P\left(X = a_i , Y = b_j\right)}{P \left(Y = b_j\right)}
-        \hspace*{1cm} 
-        \mbox{, con $b_j$  fijo } 
+        P \left(X = a_i , Y = b_j\right)  = P \left(X = a_i\right) P \left(Y= b_j\right)
+        \hspace*{1cm } 
+        \mbox{$\forall$ $a_i$,$b_j$ admisibles}
     \end{equation*}
 
-    Ahora para obtener la funcion de probabilidad de la variable aleatoria $ X|Y =2$
+   
+        Ahora si comprobamos para $X = 4 $ , $Y = 0$ 
+  
+
+    \begin{equation*}
+        P \left(X =4 , Y =2 \right) = 0 \neq \left(\frac{1}{5}\right) \left(\frac{2}{5}\right)  = P\left(X =4 \right)  P \left(Y = 0\right)
+    \end{equation*}
+
+   
+        Como existe un par de valores para los cuales la igualdad no se cumple entonces 
+        podemos decir que las variables $X$ y $Y$ son dependientes 
+    \end{flushleft}
 
 
+
+    \section*{Ejercicio 4 }
+
+    \begin{itemize}
+        \item $X$: N\'umero de caras en las tres tiradas
+        \item $Y$: Difereencia en valor absoluto entre el n\'umero de caras y el de escudos 
+    \end{itemize}
+
+    \paragraph*{Respuesta -a) }{\bf Determina la funci\'on de probabilidad conjunta del vector $\left(X,Y\right)$}
+
+    \begin{table}[h]
+        \begin{center}
+            \renewcommand{\arraystretch}{1.5}
+            \begin{tabular}{|c|c|c|c|c|}
+                \hline
+                $Y|X$ & 0 & 1 & 2 & 3
+                \\
+                \hline
+                1 & 0 &$  \frac{3}{8}$ & $\frac{3}{8} $ & 0
+                \\
+                \hline
+                3 & $\frac{1}{8}$ & 0 & 0 &  $\frac{1}{8}$
+                \\
+                \hline
+            \end{tabular}
+        \end{center}
+    \end{table}
+
+    \paragraph*{Respuesta -b } {\bf Determinar la media y al desviaci\'on t\'ipica de las funciones marginales  de $X$ y  $Y$ }
+
+    \begin{equation*}
+        P_x \left(a_i\right) = \sum_{j=i}^{\infty} P_{\left(X,Y\right)}\left(a_i,b_j\right) = \sum_{j=1}^{\infty} P \left(X =a_i , Y = b_j\right)
+    \end{equation*}
+
+    
+    \begin{table*}[h]
+        \begin{center}
+            \renewcommand{\arraystretch}{1.5}
+            \begin{tabular}{|c|c|c|c|c|}
+                \hline
+                $x$ & 0 & 1 & 2 & 3
+                \\
+                \hline 
+                $P_X\left(X=x\right)$ & $\frac{1}{8}$ & $\frac{3}{8}$ & $\frac{3}{8}$ & $\frac{1}{8}$
+                \\
+                \hline
+            \end{tabular}
+        \end{center}
+    \end{table*}
+    
+    \begin{table*}[h]
+        \begin{center}
+            \renewcommand{\arraystretch}{1.5}
+            \begin{tabular}{|c|c|c|}
+                \hline
+                $Y$ & 0 & 1 
+                \\
+                \hline 
+                $P_Y\left(Y=y\right)$ & $\frac{1}{8}$ & $\frac{2}{8}$
+                \\
+                \hline
+            \end{tabular}
+        \end{center}
+    \end{table*}
+   
+
+    \begin{flushleft}
+        Para encontrar la funci\'on de distribuci\'on tenemos que : 
+    \end{flushleft}
+
+
+
+    \begin{equation*}
+        \fbox{$\displaystyle
+        F_X\left(x\right) = P \left(X <x\right) =  \sum_{a_i\le x} P \left(X = a_i\right)
+        $}
+    \end{equation*}
+
+
+    \begin{flushleft}
+        Para encontrar la funci\'on de distribuci\'on de la variable aleatoria $X$
+    \end{flushleft}
+        
+    
+    \begin{equation*}
+        \begin{array}{cp{1cm}c}
+            
+        
+            \begin{array}{rcl}
+                F_X\left(0\right) & = & \frac{1}{8}
+                \\
+                \\
+                F_X\left(1\right) & = & \frac{4}{8}               
+            \end{array}
+            &
+            &
+            \begin{array}{rcl}
+                F_X\left(2\right) & = & \frac{7}{8}
+                \\
+                \\
+                F_X\left(3\right) & = & 1
+            \end{array}
+        \end{array}
+    \end{equation*}
+
+
+    \begin{equation*}
+        F\left(X\right) = \begin{cases}
+            0 &\mbox{si   $x < 0 $}
+            \\
+            \frac{1}{8} & \mbox{   si   $0\le x < 1$}
+            \\
+            \frac{4}{8} & \mbox{   si   $1\le x < 2$}
+            \\
+            \frac{7}{8} & \mbox{   si   $2\le x < 3$}
+            \\
+            1 & \mbox{     si   $x>3$}
+        \end{cases}
+    \end{equation*}
+     
+
+    \begin{flushleft}
+        Ahora para encontrar la funci\'on de distribuci\'on de la variable aleatoria $Y$
+    \end{flushleft}
+
+
+    \begin{equation*}
+        \begin{array}{cp{1cm}c}    
+            \begin{array}{ccc}
+                F_{Y} \left(1\right)  & = & \displaystyle \frac{6}{8}
+            \end{array}
+            &
+            &
+            \begin{array}{ccc}  
+                F_{Y} \left(3\right)  & = & 1
+            \end{array}
+    \end{array}
+    \end{equation*}
+        
+
+    \begin{equation*}
+        F\left(Y\right) = \begin{cases}
+            0 &\mbox{ si   $y < 1 $}
+            \\
+            \frac{6}{8} & \mbox{ si   $1\leq y < 3$}
+            \\
+            1 & \mbox{ si   $y\geq 3$}
+        \end{cases}
+    \end{equation*}
+
+    \begin{flushleft}
+        Ahora calculamos la media de $X$ y de $Y$
+    \end{flushleft}
+
+    \begin{flushleft}
+        Para la variable $X$ tenemos : 
+    \end{flushleft}
+    \begin{equation*}
+        \begin{array}{rcl}
+            EX & = & \displaystyle 0 \left(\frac{1}{8}\right) + 1 \left(\frac{3}{8}\right) + 2 \left(\frac{1}{8}\right)
+            \\
+            \\
+            EX & = &\displaystyle \frac{3}{4}
+        \end{array}
+    \end{equation*}
+
+    \begin{flushleft}
+        Ahora para la variable $Y$ tenemos : 
+    \end{flushleft}
+    \begin{equation*}
+        \begin{array}{rcl}
+            EY & = & \displaystyle 1 \left(\frac{6}{8}\right) + 3 \left(\frac{2}{8}\right)
+            \\
+            \\
+            EY & = &\displaystyle \frac{3}{2}
+        \end{array}
+    \end{equation*}
+
+    \begin{flushleft}
+        Para calcular la desviaci\'on primero tenemos que calcular la varianza 
+    \end{flushleft}
+
+    \begin{equation*}
+        \fbox{$V\left(X\right) = EX^2 - \left(EX\right)^2
+        $}
+    \end{equation*}
+
+    \begin{flushleft}
+        $\Rightarrow$ Para calcular la varianza de la varaible $X$ tenemos :
+    \end{flushleft}
+
+    \begin{equation*}
+        \begin{array}{rcl}
+            EX^2 & = &\displaystyle 0^2 \left(\frac{1}{8}\right) + 1^2 \left(\frac{3}{8}\right) + 2^2 \left(\frac{3}{8}\right) + 3^2 \left(\frac{1}{8}\right)
+            \\
+            \\
+            EX^2 & = &3 
+        \end{array}
+    \end{equation*}
+
+    \begin{flushleft}
+        Si sistituimos los valores que calculamos ante tenemos que:  
+    \end{flushleft}
+
+    \begin{equation*}
+        \fbox{$V\left(X\right) = \frac{3}{4}$}        
+    \end{equation*}
+
+    \begin{flushleft}
+        $\Rightarrow$ Para calcular la varianza de la varaible $Y$ tenemos :
+    \end{flushleft}
+
+    \begin{equation*}
+        \begin{array}{rcl}
+            EY^2 & = & \displaystyle 1^2 \left(\frac{6}{8}\right) + 3^2 \left(\frac{2}{8}\right)
+            \\
+            \\
+            EY^2 & = & 3
+        \end{array}
+    \end{equation*}
+
+    \begin{flushleft}
+        Si sistituimos los valores que calculamos ante tenemos que:  
+    \end{flushleft}
+
+    \begin{equation*}
+        \fbox{$V\left(Y\right) = \frac{3}{4}$}        
+    \end{equation*}
+
+    \begin{flushleft}
+        Para calcular la desviacion estandar o t\'ipica tenemos que : 
+    \end{flushleft}
+
+    \begin{equation*}
+        \fbox{$\sigma \left(X\right) = \sqrt{V\left(X\right)} $}
+    \end{equation*}
+
+    \begin{flushleft}
+        Nos queda entonces que la desviaci\'on estandar o tipica para las varaibles $X$ y $Y$ 
+        es la misma :
+    \end{flushleft}
+
+    \begin{equation*}
+        \displaystyle \sigma \left(X \right) = \sigma\left(Y\right)  = \frac{\sqrt{3}}{2}
+    \end{equation*}
 \end{document}	
