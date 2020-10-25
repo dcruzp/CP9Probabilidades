@@ -1,0 +1,166 @@
+
+\documentclass[12pt]{article}
+
+\usepackage{amsmath}
+
+\begin{document}
+	\title{Respuesta de la Clase Pr\'actica 9}
+	\author{Daniel De La Cruz Prieto}
+	\date{\today}
+	
+	\maketitle
+	
+	
+	\section*{Ejercicio 1}
+	
+	\paragraph{Respuesta I-a }
+	
+    Calcular los valores de $a$ y de $b$ si se sabe que $EX = 3.8.$
+    
+	\begin{equation*}
+		P_X\left(2\right) = \sum_{j=1}^{\infty}	P_{\left(X,Y\right)} \left(x,b_j\right) = \sum_{j=1}^{\infty} P\left(X=2,Y=b_j\right)	
+	\end{equation*}
+	
+	\begin{equation*}
+		\begin{array}{rcccccccl}
+		P_X\left(2\right) & = & 0.1& +& 0 &+& 0.3 & = & 0.4
+		\\
+		P_X\left(4\right) & = & a &+& 0.2 &+ & 0 & = & a + 0.2
+		\\
+	    P_X\left(6\right) & = & 0& +& 0.2& + & b & = & b + 0.2
+		\end{array}
+	\end{equation*}
+	
+	\begin{equation*}
+	    EX = \sum_{i=1}^{\infty} x_j P\left(X=x_j\right)
+    \end{equation*}
+    
+	\begin{equation*}
+	  \begin{array}{rcccccl}
+	  EX & = & 2(0.4)		   & + & 4(a+0.2)             & + & 6(b+0.2)
+	  \\
+	  \\
+	  EX & = & 2 * \frac{2}{5} & + & 4a + 4 * \frac{1}{5} & + & 6b + 6 * \frac{1}{5}	
+	  \\
+	  \\
+	  EX & = & \frac{4}{5}     & + & 4a + \frac{4}{5}     & + & 6b + \frac{6}{5}
+	  \\
+	  \\
+	  EX & = & \frac{14}{5}   & + & 4a                    & + & 6b 
+	  \\
+	  \\
+	  \Rightarrow 1 & = & 4a & + & 6b  
+	  \end{array}
+	\end{equation*}
+	
+	Se sabe que :
+	
+	
+	\begin{equation*}
+		\sum_{i=1}^{\infty} \sum_{j=1}^{\infty}	P_{\left(X,Y\right)} \left(a_i,b_j\right) = 1    
+	\end{equation*}
+	\begin{equation*}
+	\begin{array}{rcl}
+		\sum_{i=1}^{\infty} \sum_{j=1}^{\infty}	P_{\left(X,Y\right)} \left(a_i,b_j\right) & = & 0.1 + 0.3 + a + 0.2 + 0.2 + b 
+		\\
+	        	1            & = & 0.8 + a + b 
+	    \\
+	         1 - 0.8         & = & a + b
+	    \\
+	           0.2           & = & a + b
+	    \\
+	      \frac{1}{5}        & = & a + b
+		\end{array}  
+	\end{equation*}
+
+    Podemos plantear el sistema siguiente y obtenener los valores de a y b :
+    \begin{equation*}
+    \begin{array}{rccccl}
+    I & 4a & + & 6b & = & 1 
+    \\
+    \amalg & a & + & b & = & \frac{1}{5}
+    \end{array}
+    \end{equation*}
+    
+    Y sustituyendo en I :
+    
+    \begin{equation*}
+    \begin{array}{rcl}
+    4(\frac{1}{5} - b)  +  6b & = & 1
+    \\
+    \\
+    \frac{4}{5} - 4b  +  6b & = & 1
+    \\ 
+    \\
+    \frac{4}{5}  +  2b & = & 1
+    \\
+    \\
+    2b & = & 1  -  \frac{4}{5}
+    \\
+    \\
+    2b & = & \frac{1}{5}
+    \\
+    \\
+    b & = & \frac{1}{10}
+    \end{array}    
+    \end{equation*}
+    
+    
+    Despejando $b = \frac{1}{10}$ en la ecuaci\'on $\amalg$ para hallar a :
+    
+    
+    \begin{equation*}
+    	\begin{array}{rcccl}
+    	a  +  b & = &\frac{1}{5}
+    	\\ 
+    	\\
+    	a & = & \frac{1}{5}  -  b
+    	\\
+    	\\
+    	a & = & \frac{1}{5} - \frac{1}{10}
+    	\\
+    	\\ 
+    	a & = & \frac{1}{10}
+    	
+    	\end{array}
+    \end{equation*}
+    Luego los valores de a y b son : $ \frac{1}{10}$
+    
+    
+    
+	\section*{Ejercicio 2}
+	\paragraph{Pregunta I-b}
+	Hallar la funci\'on de probabilidad marginal para cada variable.
+
+
+	
+	$$
+		\begin{tabular}{|c|c|c|c|}
+			\hline
+			X & 2 & 4 & 6
+			\\\hline
+			P $\left(X=x\right)$ & 0.4 & 0.3 & 0.3
+			\\\hline
+		\end{tabular}
+      	\hspace{1.5cm}
+    	\begin{tabular}{|c|c|c|c|}
+    		\hline
+    		Y & 1 & 3 & 5
+    		\\\hline
+    		P $\left(Y=y\right)$ & 0.2 & 0.4 & 0.4
+    		\\\hline
+    	\end{tabular}
+    $$
+    \paragraph{Pregunta I-c} Diga si X y Y son independientes. Justifique.
+    
+    \vspace*{0.5cm}
+
+    -Para que X y Y sean independientes tiene que cumplirse:
+    \begin{equation*}
+    P\left(X=a_i,Y=b_j\right) =  P\left(X=a_i\right) P\left(Y=b_j\right)
+	\end{equation*} 
+	
+
+	\section*{Ejercicio 3}
+     
+\end{document}	
