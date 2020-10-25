@@ -127,8 +127,7 @@
     Luego los valores de a y b son : $ \frac{1}{10}$
     
     
-    
-	\section*{Ejercicio 2}
+  
 	\paragraph{Pregunta I-b}
 	Hallar la funci\'on de probabilidad marginal para cada variable.
 
@@ -160,7 +159,96 @@
     P\left(X=a_i,Y=b_j\right) =  P\left(X=a_i\right) P\left(Y=b_j\right)
 	\end{equation*} 
 	
-
-	\section*{Ejercicio 3}
      
+
+
+
+    \section*{Ejercicio 2} 
+
+    \paragraph*{2-a) Determinar la funciones de probabilidad marginales }
+
+    \begin{center}   
+        \begin{tabular}{|c|c|c|c|c|}
+            \hline
+            X                  & 4  & 6  &  8 & 10
+            \\\hline
+            $P\left(X=x\right)$   & 0.2  & 0.2  &  0.2 & 0.4
+            \\
+            \hline
+        \end{tabular}
+
+        \vspace*{0.5cm}
+        \begin{tabular}{|c|c|c|c|c|}
+            \hline
+            Y                  & 0  & 1  &  2
+            \\\hline
+            $P\left(Y=y\right)$   & 0.4  & 0.2  &  0.4 
+            \\
+            \hline
+        \end{tabular}
+    \end{center}
+
+    \paragraph*{2 - b) Determinar las funci\'on de distribuci\'on conjunta} 
+
+    \begin{equation*}
+        F_{\left(X,Y\right)} \left(x,y\right) = P \left(X \le x , Y \le y\right)
+    \end{equation*}
+
+    \begin{equation*}
+        P \left(X \le x , Y \le y\right) =  \sum_{x_i \le x}^{} \sum_{y_j \le y}^{}  P \left(X = x_i , Y = y_i\right)  
+    \end{equation*}
+
+
+
+    \paragraph*{2 -c) Determinar la varianza de Y}
+
+    \begin{equation*}
+        V\left(Y\right) = E \left[\left(Y - EY\right)^2\right] = EY^2 - \left(EY\right)^2
+    \end{equation*}
+
+    Calculamos $EY^2$ y despu\'es calculamos $EY$ para poder calcular $V\left(Y\right)$
+    \begin{equation*}
+        \begin{array}{rcl}
+            EY^2  & = & \displaystyle 0^2 \left(\frac{2}{5} \right)  + 1^2  \left(\frac{1}{5}\right) + 2^2 \left( \frac{2}{5}\right) 
+            \\
+            \\
+            EY^2  & = & \displaystyle \frac{9}{5} 
+            \\
+            \\
+            EY  & = & \displaystyle 0 \left(\frac{2}{5} \right)  + 1  \left(\frac{1}{5}\right) + 2 \left( \frac{2}{5}\right) 
+            \\
+            \\
+            EY  & = & 1 
+        \end{array}
+    \end{equation*}
+
+    Ahora nos queda que : 
+
+    \begin{equation*}
+        \begin{array}{rcl}
+            V\left(Y\right) & = & EY^2 - \left(EY\right)^2 
+            \\
+            \\
+            V\left(Y\right) & = & \displaystyle \frac{9}{5} - 1 
+            \\
+            \\
+            V\left(Y\right) & = & \displaystyle \frac{4}{5}
+            \\
+        \end{array}
+    \end{equation*}
+
+    \paragraph*{1- d) }{\bf Determinar la funcion de probabilidad de la v.a $\left(X|Y = 2\right)$ y su valor esperado }
+    
+    Dada la variable aleatoria $ X | Y = 2 $ Podemos encontrar su funcion de probabilidad con la siguiente formula : 
+    
+    
+    \begin{equation*}
+        P \left(X = a_i | Y = b_j\right) = \frac{P\left(X = a_i , Y = b_j\right)}{P \left(Y = b_j\right)}
+        \hspace*{1cm} 
+        \mbox{, con $b_j$  fijo } 
+    \end{equation*}
+
+    Ahora para obtener la funcion de probabilidad de la variable aleatoria $ X|Y =2$
+
+
 \end{document}	
