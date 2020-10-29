@@ -1,8 +1,10 @@
-# Segundo Proyecto de Probabilidades 
+# Respuesta a la Clase Practica 9 de Probabilidades 
 
-## Descripcion 
+## Daniel de la Cruz Prieto
+
+### Descripcion 
 En este proyecto voy a resolver las cp 9 de Probabilidades
 
 #### Direccion del repositorio 
 
- * esta en la siguiente pagina https://github.com/dcruzp/Segundo-Proyecto-de-Probabilidades
+ * esta en la siguiente pagina https://github.com/dcruzp/CP9Probabilidades
