@@ -315,7 +315,7 @@ Ahora nos queda que :
 \end{equation*}
 
 
-\subsection*{2-c)  Determinar si X y Y  son independientes}
+\subsection*{2-e)  Determinar si X y Y  son independientes}
 
 \begin{flushleft}
     Para determinar si son independientes tenemos que comprobar que se coumple :
@@ -332,12 +332,12 @@ Ahora nos queda que :
 
 
     \begin{equation*}
-        P \left(X =4 , Y =2 \right) = 0 \neq \left(\frac{1}{5}\right) \left(\frac{2}{5}\right)  = P\left(X =4 \right)  P \left(Y = 0\right)
+        P \left(X =4 , Y =0 \right) = 0 \neq \left(\frac{1}{5}\right) \left(\frac{2}{5}\right)  = P\left(X =4 \right)  P \left(Y = 0\right)
     \end{equation*}
 
 
     Como existe un par de valores para los cuales la igualdad no se cumple entonces
-    podemos decir que las variables $X$ y $Y$ son dependientes
+    podemos decir que las variables $X$ y $Y$ no son independientes
 \end{flushleft}
 
 
@@ -475,10 +475,10 @@ Por lo tanto :
 
 \begin{equation*}
     \begin{array}{rcl}
-        E[X|Y = 1] & = & \displaystyle 0  \left(\frac{10}{36}\right) + 1 \left(\frac{17}{36} \right) + 2 \left(\frac{8}{36}\right)  + 3 \left( \frac{1}{36} \right)
+        E\left(X|Y = 1\right) & = & \displaystyle 0  \left(\frac{10}{36}\right) + 1 \left(\frac{17}{36} \right) + 2 \left(\frac{8}{36}\right)  + 3 \left( \frac{1}{36} \right)
         \\
         \\
-        E[X|Y = 1] & = & 1
+        E\left(X|Y = 1\right) & = & 1
     \end{array}
 \end{equation*}
 
@@ -575,7 +575,7 @@ Luego chequeamos que se cumple (1) para todo valor admisible de las varaibles $X
     \renewcommand{\arraystretch}{1.5}
     \begin{tabular}{|c|c|c|c|c|}
         \hline
-        $x$                   & 0             & 1             & 2             & 3
+        $X$                   & 0             & 1             & 2             & 3
         \\
         \hline
         $P_X\left(X=x\right)$ & $\frac{1}{8}$ & $\frac{3}{8}$ & $\frac{3}{8}$ & $\frac{1}{8}$
@@ -589,10 +589,10 @@ Luego chequeamos que se cumple (1) para todo valor admisible de las varaibles $X
     \renewcommand{\arraystretch}{1.5}
     \begin{tabular}{|c|c|c|}
         \hline
-        $Y$                   & 0             & 1
+        $Y$                   & 1             & 3
         \\
         \hline
-        $P_Y\left(Y=y\right)$ & $\frac{1}{8}$ & $\frac{2}{8}$
+        $P_Y\left(Y=y\right)$ & $\frac{6}{8}$ & $\frac{2}{8}$
         \\
         \hline
     \end{tabular}
